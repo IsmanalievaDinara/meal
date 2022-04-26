@@ -1,0 +1,25 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family:"Ubuntu";
+}
+h1{
+  text-align: center;
+  color: #664444;
+}
+.card-container{
+  display:inline-grid;
+  margin:7px;
+  box-shadow: 5px 10px 18px #888888;
+  border-radius: 5px
+  
+}
+
+.card{
+  height: 400px;
+  text-align: center;
+  
+}
+.Text{
+  margin-top: 10px;
+}
