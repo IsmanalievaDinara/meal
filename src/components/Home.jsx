@@ -4,13 +4,17 @@ import { Card,CardMedia,Grid,
     import {useDispatch,useSelector} from 'react-redux'
     import {callToAPI} from './HomeSlice'
     
+    
     function Home(){  
-        const dispatch = useDispatch()
-        const data = useSelector((state)=> state)
-        useEffect(()=>{
-            dispatch(callToAPI())
-        },[dispatch])
-        console.log(data)
+    
+     const dispatch = useDispatch()
+     const data = useSelector((state)=> state)
+     useEffect(()=>{
+         dispatch(callToAPI())
+     },[dispatch])
+     console.log(data)
+  
+     
         
         return (
             
@@ -31,8 +35,10 @@ import { Card,CardMedia,Grid,
               </Grid>
     
             </Card>
+            
     
             </div>
+
     
            </>
     
@@ -42,7 +48,7 @@ import { Card,CardMedia,Grid,
          
            
         }
-         
+
          </div> 
          )
     }
